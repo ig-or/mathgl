@@ -171,7 +171,7 @@ if(MSVC)
 else(MSVC)
 	option(enable-pthr-widget "Enable POSIX threads for widgets" ON)
 endif(MSVC)
-option(enable-openmp "Enable OpenMP support" ON)
+option(enable-openmp "Enable OpenMP support" OFF)
 option(disable-C99complex "Enable C99 complex number support" OFF)
 
 if(enable-pthread AND enable-openmp)
