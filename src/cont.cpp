@@ -384,7 +384,7 @@ void MGL_NO_EXPORT mgl_draw_curvs(HMGL gr, mreal val, mreal c, int text, const s
 	delete []nn;	delete []ff;
 }
 //-----------------------------------------------------------------------------
-HMDT mgl_data_conts(mreal val, HCDT dat)
+HMDT MGL_EXPORT mgl_data_conts(mreal val, HCDT dat)
 {
 	mglPoint Min(0,0,0), Max(1,1,1);
 	mglDataV x(dat->GetNx(),dat->GetNy(),dat->GetNz(),0,1,'x');
